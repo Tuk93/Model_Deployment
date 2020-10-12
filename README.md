@@ -2,7 +2,7 @@
 
 Wearing masks in the current pandemic (COVID-19) is made mandatory by multiple countries. This is a basic resnet implementation that performs binary classification of images and identifies images where the individual is wearing a mask or not.
 
-The model for is implementation was trained with the mask dataset from kaggle which contains images of persons with masks and without masks.
+The model for this implementation was trained with the mask dataset from kaggle which contains images of persons with masks and without masks.
 
 In the container directory are all the components you need to package the sample algorithm for Amazon SageMager:
 
