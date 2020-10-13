@@ -85,7 +85,7 @@ You can now view your Streamlit app in your browser.
   
  #### Please note, If you are using Ec2 instance you will need to open custom TCP port 8501 to 0.0.0.0
  
- ##### Future Model hosting through AWS SageMaker:*
+ ##### Future Model hosting through AWS SageMaker/Cloud Platform:*
  
  ###### Dependencies*
 
