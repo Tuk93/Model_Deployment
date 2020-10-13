@@ -42,9 +42,9 @@ The files that we'll put in the container are:
     
 The images used were real images of faces wearing masks. The images were collected from the following sources:
 
-# Kaggle datasets
+#### Kaggle datasets
 
-# Installation and How to run this demo to test locally before deploying it into production :
+### Installation and How to run this demo to test locally before deploying it into production :
 
 1. Clone the repo
 git clone https://github.com/Tuk93/Model_Deployment.git
@@ -63,7 +63,7 @@ cd decision tree
 
 Streamlit is an open-source Python library that makes it easy to build beautiful custom web-apps for machine learning and data science. Streamlit can be installed easily using pip. Deployment of machine learning models is the process of putting models into production so that web applications and APIs can consume a trained model and generate predictions with new data points.
 
-pip install streamlit
+####pip install streamlit
 
 Once you installed streamlit you can change the directory to the decision_trees/model/trained_weights/ where we have app_test.py simple web app classification, once you upload the image it will be saved at folder 'image/' and we will pass model_path as the image folder to get the predictions on the uploaded image.
 
@@ -74,10 +74,10 @@ you will be prompted with 2 URLs : for ex
 
 You can now view your Streamlit app in your browser.
 
-  Network URL: http://172.31.75.85:8501
-  External URL: http://3.238.72.86:8501
+  ####Network URL: http://172.31.75.85:8501
+  ####External URL: http://3.238.72.86:8501
   
- Please note, If you are using Ec2 instance you will need to open port 8501 to 0.0.0.0
+ ####Please note, If you are using Ec2 instance you will need to open port 8501 to 0.0.0.0
   
   
 
