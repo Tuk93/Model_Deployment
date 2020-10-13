@@ -84,6 +84,28 @@ You can now view your Streamlit app in your browser.
   #### External URL: http://3.238.72.86:8501
   
  #### Please note, If you are using Ec2 instance you will need to open custom TCP port 8501 to 0.0.0.0
-  
+ 
+ ##### Future Model hosting through AWS SageMaker:*
+
+###### Pros: 
+
+* Scalable, AWS Sagemaker Endpoint autoscale the number of instance behind the endpoint based on request traffic per instance. Default and recommended metric for autoscaling is SageMakerVariantInvocationsPerInstance - the average number of times per minute that each instance for a variant is invoked.
+* No risk for existing experiments.
+* Model Isolation: One model One endpoint approach or Multi Models Per Endpoint.
+* POC implementation done.
+
+###### Cons: 
+
+* More expensive (more info refer “Cost calculation” section )
+    * Monthly cost per model per Endpoint = IntanceType hourly cost * 24(hours) * 30(days) * Number of Containers behind endpoint
+    * For example:
+        * InstanceType: ml.m5.xlarge(4CPU, 16GB) -> Pricing: $0.269/hour
+        * Assuming 3 containers instance running behind endpoint
+        * Monthly cost for hosting one model : 0.269 * 24  * 30 * 3(containers) = *$582 *
+        
+* Endpoint creation takes 10 minutes ( which may improve in future)
+
+
+
   
 
