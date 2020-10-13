@@ -95,13 +95,12 @@ You can now view your Streamlit app in your browser.
 
 ###### Deployment:*
 
-* Deployment done through internal bones template which creates CloudFormation template to setup private link with internal Amazon Network and AWS.
-* Model hosted on SageMaker and fine-tuned and retrained with new data every week.
-* Internally Beta, Gamma and Prod stages for deployment.
-* The change in code is deployed via Pipeline by performing E2E checks in the pipeline that ensure
+* Deployment can be done through CloudFormation/Terraform template.
+* Model can be hosted on SageMaker/Cloud platform and fine-tuned and retrained with new data every week.
+* Can create Internal Beta, Gamma and Prod stages for deployment.
+* The change in code can be deployed via Pipeline by performing E2E checks in the pipeline that ensure
     newly fine tuned model evaluation metric is equal or above existing model. Otherwise deployment halts and require manual approval.
 * *Evaluation Metrics*: Precision, F1 and RocAUC
-
 
 
 ###### Pros: 
