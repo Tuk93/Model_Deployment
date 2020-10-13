@@ -48,7 +48,7 @@ The images used were real images of faces wearing masks. The images were collect
 
 1. Clone the repo :
 
-git clone https://github.com/Tuk93/Model_Deployment.git
+ ##### git clone https://github.com/Tuk93/Model_Deployment.git
 
 2.Change your directory to the cloned repo.
 
