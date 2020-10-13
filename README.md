@@ -52,7 +52,7 @@ git clone https://github.com/Tuk93/Model_Deployment.git
 
 2.Change your directory to the cloned repo.
 
-3.First you can test the locally using local_test, to do so you can insert image url in  file predict.sh file and then build the container as below:
+3.First you can test the locally using local_test, to do so you can insert image url in  file 'predict.sh' and then build the container as below:
 
 
   docker build . -t mask
