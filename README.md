@@ -86,6 +86,23 @@ You can now view your Streamlit app in your browser.
  #### Please note, If you are using Ec2 instance you will need to open custom TCP port 8501 to 0.0.0.0
  
  ##### Future Model hosting through AWS SageMaker:*
+ 
+ ###### Dependencies*
+
+* Large numbers of labeled images are necessary when training image classifiers  However, manually labeling a large number of images is a cumbersome task and to handle this we can automate Data Labeling using Sagemaker active learning algorithm. With larger datasets, there is more potential to automatically label the data because the neural network can achieve high enough accuracy for auto-labeling.
+*  AWS  IAM ,AWS SageMaker & Ground Truth ,AWS CloudFormation 
+
+
+###### Deployment:*
+
+* Deployment done through internal bones template which creates CloudFormation template to setup private link with internal Amazon Network and AWS.
+* Model hosted on SageMaker and fine-tuned and retrained with new data every week.
+* Internally Beta, Gamma and Prod stages for deployment.
+* The change in code is deployed via Pipeline by performing E2E checks in the pipeline that ensure
+    newly fine tuned model evaluation metric is equal or above existing model. Otherwise deployment halts and require manual approval.
+* *Evaluation Metrics*: Precision, F1 and RocAUC
+
+
 
 ###### Pros: 
 
@@ -105,7 +122,7 @@ You can now view your Streamlit app in your browser.
         
 * Endpoint creation takes 10 minutes ( which may improve in future)
 
-
+###### In future whole workflow can be Automated using CloudFormation/Terraform as per requirement.
 
   
 
