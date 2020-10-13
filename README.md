@@ -77,7 +77,7 @@ You can now view your Streamlit app in your browser.
   #### Network URL: http://172.31.75.85:8501
   #### External URL: http://3.238.72.86:8501
   
- #### Please note, If you are using Ec2 instance you will need to open port 8501 to 0.0.0.0
+ #### Please note, If you are using Ec2 instance you will need to open custom TCP port 8501 to 0.0.0.0
   
   
 
