@@ -36,7 +36,7 @@ The files that we'll put in the container are:
     
     serve is the program started when the container is started for hosting. It simply launches the gunicorn server which runs multiple instances of the Flask app defined in predictor.py. 
     
-    train is the program that is invoked when the container is run for training. You will modify this program to implement your training algorithm.
+    train is the program that is invoked when the container is run for training. 
     
     wsgi.py is a small wrapper used to invoke the Flask app. You should be able to take this file as-is.
     
