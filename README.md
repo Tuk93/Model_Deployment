@@ -51,13 +51,13 @@ git clone https://github.com/Tuk93/Model_Deployment.git
 2.Change your directory to the cloned repo.
 3.First you can test the locally using local_test, to do so you can insert image url in  file predict.sh file and then build the container as below :
 
-docker build . -t mask
+  docker build . -t mask
 
-docker run -p 8080:8080 --rm mask serve
+  docker run -p 8080:8080 --rm mask serve
 
-cd decision tree
+  cd decision tree
 
-./predict.sh
+  ./predict.sh
 
 ### Now you can test the same using streamlit web app where you can insert image (jpg, png) and get the prediction from the same model.
 
