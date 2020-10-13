@@ -59,7 +59,7 @@ cd decision tree
 
 ./predict.sh
 
-# Now you can test the same using streamlit web app where you can insert image (jpg, png) and get the prediction from the same model.
+### Now you can test the same using streamlit web app where you can insert image (jpg, png) and get the prediction from the same model.
 
 Streamlit is an open-source Python library that makes it easy to build beautiful custom web-apps for machine learning and data science. Streamlit can be installed easily using pip. Deployment of machine learning models is the process of putting models into production so that web applications and APIs can consume a trained model and generate predictions with new data points.
 
