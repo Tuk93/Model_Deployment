@@ -55,25 +55,26 @@ git clone https://github.com/Tuk93/Model_Deployment.git
 3.First you can test the locally using local_test, to do so you can insert image url in  file 'predict.sh' and then build the container as below:
 
 
-  docker build . -t mask
+  ##### docker build . -t mask
 
-  docker run -p 8080:8080 --rm mask serve
+  ##### docker run -p 8080:8080 --rm mask serve
 
-  cd decision tree
+  ##### cd decision tree
 
-  ./predict.sh
+  ##### ./predict.sh
 
 
 ### Now you can test the same using streamlit web app where you can insert image (jpg, png) and get the prediction from the same model.
 
 Streamlit is an open-source Python library that makes it easy to build beautiful custom web-apps for machine learning and data science. Streamlit can be installed easily using pip. Deployment of machine learning models is the process of putting models into production so that web applications and APIs can consume a trained model and generate predictions with new data points.
 
-#### pip install streamlit
+##### pip install streamlit
 
 Once you installed streamlit you can change the directory to the decision_trees/model/trained_weights/ where we have app_test.py simple web app classification, once you upload the image it will be saved at folder 'image/' and we will pass model_path as the image folder to get the predictions on the uploaded image.
 
 To start the web app you need to run below command :
-streamlit run app_test.py 
+
+##### streamlit run app_test.py 
 
 you will be prompted with 2 URLs : for ex 
 
