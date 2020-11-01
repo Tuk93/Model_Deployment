@@ -1,4 +1,4 @@
-# Model_Deployment
+# Machine Learning Model_Deployment
 
 Wearing masks in the current pandemic (COVID-19) is made mandatory by multiple countries. This is a basic resnet implementation that performs binary classification of images and identifies images where the individual is wearing a mask or not.This project can therefore be used in real-time applications which require face-mask detection for safety purposes.Hence it can be integrated with embedded systems for application in airports, railway stations, offices, schools, and public places to ensure that public safety guidelines are followed.
 
