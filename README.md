@@ -44,7 +44,7 @@ The images used were real images of faces wearing masks. The images were collect
 
 #### Kaggle datasets
 
-### Installation and How to run this demo to test locally before deploying it into production :
+### Installation and How to run this demo locally before deploying it into production :
 
 1. Clone the repo :
 
